@@ -34,7 +34,6 @@ namespace SeleniumExercise.Tests
         [Test]
         public void SelectDateInFuture_FutureDateSelected_DateDisplayedCorrectly()
         {
-            // Arrange & Act
             _webDriver.FindElement(By.Id("ContentPlaceHolder1_Date1")).Click();
 
             var datePickerContainer = _webDriver.FindElement(By.Id("ContentPlaceHolder1_Date1-awepw"));
@@ -59,7 +58,6 @@ namespace SeleniumExercise.Tests
         [Test]
         public void SelectItemFromComboBox_ComboBoxItemSelected_ItemDisplayed()
         {
-            // Arrange & Act
             var item = "Mango";
             var comboBoxContainer = _webDriver.FindElement(By.ClassName("combobox"));
             comboBoxContainer.FindElement(By.TagName("button")).Click();
@@ -72,7 +70,6 @@ namespace SeleniumExercise.Tests
         [Test]
         public void SelectAllAjaxCheckBoxes_AllCheckboxesSelected_AllCheckboxesShownAsSelected()
         {
-            // Arrange & Act
             var checkboxContainer = _webDriver.FindElement(By.XPath("//div[contains(@class, 'awe-display o-ochk')]"));
             var checkBoxes = checkboxContainer.FindElements(By.TagName("li"));
 
@@ -89,7 +86,6 @@ namespace SeleniumExercise.Tests
         [Test]
         public void SetGridPageSizeTo100_SetPageSizeTo100_NavigateToLastPage()
         {
-            // Arrange & Act
             var gridContainer = _webDriver.FindElement(By.Id("ContentPlaceHolder1_Grid1"));
             var footer = gridContainer.FindElement(By.ClassName("awe-footer"));
 
