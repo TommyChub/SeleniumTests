@@ -17,7 +17,7 @@ namespace SeleniumExercise.Tests
 
         public SeleniumTests()
         {
-            _webDriver = new ChromeDriver("Drivers\\");
+            _webDriver = new ChromeDriver();
             _wait = new WebDriverWait(_webDriver, TimeSpan.FromSeconds(1));
         }
 
